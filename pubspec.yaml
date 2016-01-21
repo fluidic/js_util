@@ -7,8 +7,9 @@ homepage: https://github.com/ProtoCatTeam/js_util
 environment:
   sdk: '>=1.0.0 <2.0.0'
 
-#dependencies:
-#  lib_name: any
+dependencies:
+  js: 0.6.0
+  quiver_iterables: 1.0.0
 
 dev_dependencies:
   test: '>=0.12.0 <0.13.0'
