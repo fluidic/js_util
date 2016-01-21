@@ -1,6 +1,6 @@
 # js_util
 
-A library for Dart developers. It is awesome.
+Utilities to access JavaScript from Dart.
 
 ## Usage
 
@@ -16,4 +16,4 @@ A simple usage example:
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: http://example.com/issues/replaceme
+[tracker]: https://github.com/ProtoCatTeam/js_util/issues
