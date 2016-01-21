@@ -8,6 +8,7 @@ environment:
   sdk: '>=1.0.0 <2.0.0'
 
 dependencies:
+  browser: ^0.10.0+2
   js: 0.6.0
   quiver_iterables: 1.0.0
 
