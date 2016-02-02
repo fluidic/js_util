@@ -22,14 +22,13 @@ external void defineProperty(o, String prop, Description description);
 @JS('JsUtil.getProperty')
 external void getProperty(o, String prop);
 
+@JS('JsUtil.newObject')
+external dynamic newObject();
+
 void _setValue(o, String key, value) =>
     defineProperty(o, key, new Description(value: value));
 
 getValue(o, String key) => getProperty(o, key);
-
-@JS()
-@anonymous
-class JsObject {}
 
 /// Converts a Dart object to a JavaScript object.
 ///
@@ -45,7 +44,7 @@ class JsObject {}
 ///
 toJS(o) {
   if (o is Map) {
-    final newObj = new JsObject();
+    final newObj = newObject();
     for (final keyValuePair in zip([o.keys, o.values])) {
       _setValue(newObj, keyValuePair[0], toJS(keyValuePair[1]));
     }
