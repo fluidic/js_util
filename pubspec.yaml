@@ -2,7 +2,7 @@ name: js_util
 description: Utilities to access JavaScript from Dart.
 version: 0.1.0
 #author: Your Name <email@example.com>
-homepage: https://github.com/ProtoCatTeam/js_util
+homepage: https://github.com/fluidic/js_util
 
 environment:
   sdk: '>=1.0.0 <2.0.0'
