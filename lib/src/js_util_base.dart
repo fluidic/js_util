@@ -24,7 +24,7 @@ external getValue(o, String prop);
 
 /// Creates a new JavaScript object.
 @JS('JsUtil.newObject')
-external dynamic newObject();
+external newObject();
 
 /// Performs `o[key] = value`.
 void setValue(o, String key, value) {
