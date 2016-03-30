@@ -14,4 +14,4 @@ dartanalyzer $DARTANALYZER_FLAGS $libs test/js_util_test.dart
 
 # Run the tests.
 echo "Running tests..."
-pub run test:test
+pub run test:test -p content-shell
