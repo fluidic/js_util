@@ -25,10 +25,11 @@ external void getProperty(o, String prop);
 @JS('JsUtil.newObject')
 external dynamic newObject();
 
-void _setValue(o, String key, value) =>
-    defineProperty(o, key, new Description(value: value));
-
 getValue(o, String key) => getProperty(o, key);
+
+void _setValue(o, String key, value) {
+  defineProperty(o, key, new Description(value: value));
+}
 
 /// Converts a Dart object to a JavaScript object.
 ///
