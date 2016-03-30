@@ -17,17 +17,22 @@ class Description {
       {bool configurable, bool enumerable, value, bool writable});
 }
 
+/// A wrapper for https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
 @JS('Object.defineProperty')
 external void defineProperty(o, String prop, Description description);
 
+/// Returns `o[prop]`.
 @JS('JsUtil.getProperty')
 external void getProperty(o, String prop);
 
+/// Creates a new JavaScript object.
 @JS('JsUtil.newObject')
 external dynamic newObject();
 
+/// Returns `o[key]`.
 getValue(o, String key) => getProperty(o, key);
 
+/// Performs `o[key] = value`.
 void setValue(o, String key, value) {
   defineProperty(o, key, new Description(value: value));
 }
