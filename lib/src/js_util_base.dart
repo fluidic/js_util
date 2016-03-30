@@ -9,14 +9,14 @@ import 'package:quiver_iterables/iterables.dart';
 
 @JS()
 @anonymous
-class Description {
-  external factory Description(
+class PropertyDescription {
+  external factory PropertyDescription(
       {bool configurable, bool enumerable, value, bool writable});
 }
 
 /// A wrapper for https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
 @JS('Object.defineProperty')
-external void defineProperty(o, String prop, Description description);
+external void defineProperty(o, String prop, PropertyDescription description);
 
 /// Returns `o[prop]`.
 @JS('JsUtil.getValue')
@@ -28,7 +28,7 @@ external dynamic newObject();
 
 /// Performs `o[key] = value`.
 void setValue(o, String key, value) {
-  defineProperty(o, key, new Description(value: value));
+  defineProperty(o, key, new PropertyDescription(value: value));
 }
 
 /// Converts a Dart object to a JavaScript object.
