@@ -5,12 +5,12 @@ author: Fluidic Team <dev@fluidic.io>
 homepage: https://github.com/fluidic/js_util
 
 environment:
-  sdk: '>=1.0.0 <2.0.0'
+  sdk: '>=1.8.0 <2.0.0'
 
 dependencies:
-  browser: ^0.10.0+2
-  js: 0.6.0
-  quiver_iterables: 1.0.0
+  js: '>=0.6.0 <0.7.0'
+  quiver_iterables: '>=1.0.0 <2.0.0'
 
 dev_dependencies:
+  browser: '>=0.10.0 <0.11.0'
   test: '>=0.12.0 <0.13.0'
