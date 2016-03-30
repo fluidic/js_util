@@ -19,15 +19,12 @@ class Description {
 external void defineProperty(o, String prop, Description description);
 
 /// Returns `o[prop]`.
-@JS('JsUtil.getProperty')
-external void getProperty(o, String prop);
+@JS('JsUtil.getValue')
+external getValue(o, String prop);
 
 /// Creates a new JavaScript object.
 @JS('JsUtil.newObject')
 external dynamic newObject();
-
-/// Returns `o[key]`.
-getValue(o, String key) => getProperty(o, key);
 
 /// Performs `o[key] = value`.
 void setValue(o, String key, value) {
