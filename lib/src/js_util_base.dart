@@ -27,7 +27,7 @@ external dynamic newObject();
 
 getValue(o, String key) => getProperty(o, key);
 
-void _setValue(o, String key, value) {
+void setValue(o, String key, value) {
   defineProperty(o, key, new Description(value: value));
 }
 
@@ -47,7 +47,7 @@ toJS(o) {
   if (o is Map) {
     final newObj = newObject();
     for (final keyValuePair in zip([o.keys, o.values])) {
-      _setValue(newObj, keyValuePair[0], toJS(keyValuePair[1]));
+      setValue(newObj, keyValuePair[0], toJS(keyValuePair[1]));
     }
     return newObj;
   } else if (o is List) {
