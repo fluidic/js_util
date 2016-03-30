@@ -1,5 +1,7 @@
 # js_util
 
+[![Build Status](https://travis-ci.org/fluidic/js_util.svg?branch=master)](https://travis-ci.org/fluidic/js_util)
+
 Utilities to access JavaScript from Dart.
 
 ## Usage
