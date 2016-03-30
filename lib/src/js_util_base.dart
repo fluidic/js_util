@@ -13,7 +13,8 @@ import 'package:quiver_iterables/iterables.dart';
 @JS()
 @anonymous
 class Description {
-  external factory Description({bool configurable, bool enumerable, value});
+  external factory Description(
+      {bool configurable, bool enumerable, value, bool writable});
 }
 
 @JS('Object.defineProperty')
