@@ -13,7 +13,7 @@ pubspec.lock
 *.info.json
 
 # Directory created by dartdoc
-doc/api/
+doc/
 
 # JetBrains IDEs
 .idea/
