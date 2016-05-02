@@ -1,3 +1,4 @@
+@JS()
 library js_util.test;
 
 import 'package:js/js.dart';
